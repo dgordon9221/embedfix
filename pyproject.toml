@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "EmbedFix Discord Bot"
-version = "1.0.3"
+name = "embedfix"
+version = "1.0.4"
 description = "Fixes Discord embeds for Instagram and Twitter links"
 authors = ["Dave Gordon <dgordon9221@gmail.com>"]
 

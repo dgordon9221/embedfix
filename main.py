@@ -24,7 +24,7 @@ async def on_message(message):
 
     match parsedUrl.netloc:
         case 'x.com' | 'www.x.com' | 'twitter.com' | 'www.twitter.com':
-            await message.reply(urlunsplit(parsedUrl._replace(netloc='fxtwitter.com')))
+            await message.reply(urlunsplit(parsedUrl._replace(netloc='fxtwitter.com',query='')))
         case 'instagram.com' | 'www.instagram.com':
             fullUrl = urlunsplit(parsedUrl._replace(netloc='ddinstagram.com'))
             response = requests.get(fullUrl)
